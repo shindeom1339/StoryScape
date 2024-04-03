@@ -2,8 +2,8 @@ import React from 'react'
 
 function Logo({ width = '100px' }) {
     return (
-        <div>
-            Logo
+        <div className='text-3xl font-bold text-[#deedca]'>
+            StoryScape
         </div>
     )
 }

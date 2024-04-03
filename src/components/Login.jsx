@@ -28,16 +28,16 @@ function Login() {
     }
     return (
         <div className='flex items-center justify-center w-full'>
-            <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
-                {/* <div className="mb-2 flex justify-center">
-                    <span className="inline-block w-full max-w-[100px]">
+            <div className={`mx-auto w-full max-w-lg bg-[#114232] rounded-xl p-10 border border-black/10`}>
+                <div className="mb-2 flex justify-center">
+                    <span className="inline-block w-full text-center text-4xl">
                         <Logo width="100%" />
                     </span>
-                </div> */}
+                </div>
 
-                <h2 className="text-center text-2xl font-bold leading-tight">Sign in to your account</h2>
+                <h2 className="text-center text-2xl font-bold text-[#deedca] leading-tight">Sign in to your account</h2>
 
-                <p className="mt-2 text-center text-base text-black/60">
+                <p className="mt-2 text-center text-base text-[#deedca]/90">
                     Don&apos;t have any account?&nbsp;
                     <Link
                         to="/signup"
@@ -55,6 +55,7 @@ function Login() {
                             label="Email: "
                             placeholder="Enter your email"
                             type="email"
+                            className="placeholder-[#deedca]/50 bg-[#deedca]/20 focus:bg-[#deedca]/40"
                             {...register("email", {
                                 required: true,
                                 validate: {
@@ -67,6 +68,7 @@ function Login() {
                             label="Password: "
                             type="password"
                             placeholder="Enter your password"
+                            className="placeholder-[#deedca]/50 bg-[#deedca]/20 focus:bg-[#deedca]/40"
                             {...register("password", {
                                 required: true,
                             })}
@@ -75,6 +77,7 @@ function Login() {
                         <Button
                             type="submit"
                             className="w-full"
+                            bgColor="bg-[#deedca]"
                         >Sign In</Button>
                     </div>
                 </form>

@@ -10,34 +10,34 @@ const Home_ = () => {
     return (
         <div className="w-full pb-8">
             <Container>
-                <div className="container mx-auto flex flex-col items-center px-4 pb-10 pt-12 sm:py-16 text-center md:py-24 md:px-10 lg:px-32 xl:max-w-3xl">
-                    <h1 className="text-3xl text-gray-700 font-bold leading-none sm:text-5xl ">
-                        <span className="text-gray-600 capitalize ">
+                <div className="container mx-auto flex flex-col items-center px-4 pb-10 pt-12 sm:py-16 text-center md:py-24 md:px-10 lg:px-24 xl:max-w-3xl">
+                    <h1 className="text-3xl text-[#175943] font-bold leading-none sm:text-5xl">
+                        <span className="text-[#114232] capitalize ">
                             {" "}
                             Hi {status ? name : "there"}!
                         </span>{" "}
                         <br />
                         Welcome to StoryScape
                     </h1>
-                    <p className="px-8 mt-8 mb-12 font-semibold text-xl">
+                    <p className="px-8 mt-8 mb-12 font-medium text-2xl">
                         Elevate Your Blogging Experience to New Heights!
                     </p>
                     <div className="flex flex-wrap justify-center">
                         <Link
                             to={status ? "/all-posts" : "/signup"}
-                            className="px-8 py-3 m-2 border-2 hover:border-gray-500 duration-200 text-lg font-semibold rounded  "
+                            className="px-8 py-3 m-2 border-2 border-[#114232] text-[#114232] text-lg font-semibold rounded"
                         >
                             {status ? "Read Blog" : "SignUp"}
                         </Link>
                         <Link
                             to={status ? "/add-post" : "/login"}
-                            className="px-8 py-3 m-2 text-lg font-semibold text-white duration-200 hover:text-cyan-300 rounded bg-gray-800 hover:bg-black"
+                            className="px-8 py-3 m-2 text-lg font-semibold duration-200 rounded bg-[#114232] text-[#deedca]"
                         >
                             {status ? "Post Blog" : "Login"}
                         </Link>
                     </div>
                     {!status && (
-                        <p className="text-gray-500">Login to Read, Share and Post Blogs</p>
+                        <p className="text-[#4d6e23] font-semibold text-lg">Login to Read, Share and Post Blogs</p>
                     )}
                 </div>
             </Container>

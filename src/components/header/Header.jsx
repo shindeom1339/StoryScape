@@ -9,27 +9,27 @@ function Header() {
     const navigate = useNavigate()
     const navItems = [
         {
-            name: 'Home',
+            name: 'HOME',
             path: "/",
             active: true
         },
         {
-            name: "Login",
+            name: "LOGIN",
             path: "/login",
             active: !authStatus,
         },
         {
-            name: "Signup",
+            name: "SIGNUP",
             path: "/signup",
             active: !authStatus,
         },
         {
-            name: "All Posts",
+            name: "ALL POSTS",
             path: "/all-posts",
             active: authStatus,
         },
         {
-            name: "Add Post",
+            name: "ADD POST",
             path: "/add-post",
             active: authStatus,
         },
@@ -37,7 +37,7 @@ function Header() {
 
 
     return (
-        <header className='py-3 shadow bg-gray-500'>
+        <header className='py-3 shadow bg-[#114232]'>
             <Container>
                 <nav className='flex'>
                     <div className='mr-4'>
@@ -49,7 +49,7 @@ function Header() {
                                 <li key={item.name}>
                                     <button
                                         onClick={() => navigate(item.path)}
-                                        className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
+                                        className='inline-bock px-6 py-2 mx-1 text-sm font-medium text-[#deedca] hover:bg-[#deedca] duration-200 rounded hover:bg-opacity-10'
                                     >{item.name}</button>
                                 </li>
                             ) : null

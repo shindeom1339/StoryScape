@@ -31,17 +31,17 @@ function SignUp() {
 
     return (
         <div className="flex items-center justify-center">
-            <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
+            <div className={`mx-auto w-full max-w-lg bg-[#114232] rounded-xl p-10 border border-black/10`}>
 
-                {/* <div className="mb-2 flex justify-center">
-                    <span className="inline-block w-full max-w-[100px]">
+                <div className="mb-2 flex justify-center">
+                    <span className="inline-block w-full text-center text-4xl">
                         <Logo width="100%" />
                     </span>
-                </div> */}
+                </div>
 
-                <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
+                <h2 className="text-center text-2xl font-bold leading-tight text-[#deedca]">Sign up to create account</h2>
 
-                <p className="mt-2 text-center text-base text-black/60">
+                <p className="mt-2 text-center text-base text-[#deedca]/90">
                     Already have an account?&nbsp;
                     <Link
                         to="/login"
@@ -58,6 +58,7 @@ function SignUp() {
                         <Input
                             label="Full name: "
                             placeholder="Enter your name"
+                            className="placeholder-[#deedca]/50 bg-[#deedca]/20 focus:bg-[#deedca]/40"
                             {...register("name", {
                                 required: true,
                             })}
@@ -66,6 +67,7 @@ function SignUp() {
                         <Input
                             label="Email: "
                             placeholder="Enter your email"
+                            className="placeholder-[#deedca]/50 bg-[#deedca]/20 focus:bg-[#deedca]/40"
                             type="email"
                             {...register("email", {
                                 required: true,
@@ -78,6 +80,7 @@ function SignUp() {
                         <Input
                             label="Password: "
                             placeholder="Enter your password"
+                            className="placeholder-[#deedca]/50 bg-[#deedca]/20 focus:bg-[#deedca]/40"
                             {...register("password", {
                                 required: true,
                             })}
@@ -86,6 +89,7 @@ function SignUp() {
                         <Button
                             type="submit"
                             className="w-full"
+                            bgColor="bg-[#deedca]"
                         >Create Account</Button>
                     </div>
                 </form>

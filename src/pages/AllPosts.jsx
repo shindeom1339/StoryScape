@@ -7,6 +7,7 @@ function AllPosts() {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         appWriteService.getPosts([]).then((posts) => {
             if (posts) setPosts(posts.documents)
         })

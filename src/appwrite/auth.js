@@ -44,6 +44,14 @@ export class AuthService {
         return null
     }
 
+    // async getUserById({ userId }) {
+    //     try {
+    //         return await this.account.get(userId)
+    //     } catch (error) {
+    //         console.log("Appwrite service :: getUserById :: error ", error)
+    //     }
+    // }
+
     async logout() {
         try {
             await this.account.deleteSessions()
