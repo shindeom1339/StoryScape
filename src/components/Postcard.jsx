@@ -9,7 +9,7 @@ function Postcard({ $id, title, content, featuredImage }) {
     const name = useSelector((state) => state.auth.userData?.name);
     return (
 
-        <div className='p-5 sm:p-2 duration-300 hover:border-gray-300 rounded-md min-w-64 sm:w-72 md:w-1/4 lg:w-1/5 bg-white h-full shadow-[0_10px_15px_-3px_rgba(17,66,50,0.3)] flex flex-col justify-between hover:scale-105'>
+        <div className='p-5 bg-white sm:p-2 w-full duration-300 shadow-[0_10px_15px_-3px_rgba(17,66,50,0.3)] flex flex-col justify-between hover:scale-105 rounded-md min-w-64 h-full sm:w-72 md:w-1/4 lg:w-1/5 xl:w-1/6'>
             <span className="block p-3 relative h-48 rounded overflow-hidden">
                 <img
                     src={appWriteService.getFilePreview(featuredImage)}
@@ -25,7 +25,7 @@ function Postcard({ $id, title, content, featuredImage }) {
                 <h2 className="text-black title-font text-lg font-medium line-clamp-2">
                     {title}
                 </h2>
-                <div className="mt-1 text-md mb-2  leading-5 text-gray-600 line-clamp-2">
+                <div className="mt-1 text-md mb-2 leading-5 text-gray-600 line-clamp-2">
                     {parse(content)}
                 </div>
             </div>

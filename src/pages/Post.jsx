@@ -120,9 +120,9 @@ export default function Post() {
                     <div className="w-full mb-6">
                         <h1 className="text-3xl font-bold text-center">{post.title}</h1>
                     </div>
-                    <p className="browser-css text-lg whitespace-break-spaces custom-content">
+                    <div className="browser-css text-lg whitespace-break-spaces custom-content">
                         {parse(post.content)}
-                    </p>
+                    </div>
                 </div>
             </Container>
         </div>

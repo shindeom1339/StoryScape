@@ -12,6 +12,7 @@ import AuthLayout from './AuthLayout'
 import Button from './Button'
 import Input from './Input'
 import Select from './Select'
+import ToogleButton from './header/ToogleButton'
 
 export {
     Header,
@@ -27,6 +28,7 @@ export {
     AuthLayout,
     Input,
     Select,
-    Button
+    Button,
+    ToogleButton
 
 }
