@@ -27,13 +27,13 @@ function App() {
     // <div className='min-h-screen flex flex-wrap content-between'>
     //   <div className='w-full block'>
     <div className='min-h-screen flex flex-col'>
-      <div className='flex-grow'>
-        <Header />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
+      {/* <div className='flex-grow'> */}
+      <Header />
+      {/* <main className='max-h-screen'> */}
+      <Outlet />
+      {/* </main> */}
+      <Footer />
+      {/* </div> */}
     </div>
   ) : null
 }
